@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<body>
+  <div class="container-fluid ">
+     <h1 id="title">Job Application</h1>
+  <p id="description">Please fill in your details</p>
+  <form class="form-group " id="survey-form" >
+    <label id="name-label"class="form-check-label">Name</label>
+    <input class="form-control mb-4 " type="text" id="name" placeholder="Enter your name" required>
+    <label id="email-label"class="form-check-label">E-mail</label>
+    <input class="form-control  mb-4" type="email" id="email" placeholder="Enter your e-mail" required>
+    <label id="number-label" class="form-check-label">Age(Optional)</label>
+    <input class="form-control  mb-4" type="number" id="number" placeholder="Age"min="13"max="65" required>
+    <label class="form-check-label">Which option best describes your current role?</label>
+    <select class="form-control  mb-4" id="dropdown">
+      <option value="Student">Student</option>
+      <option value="Full Time">Full Time</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select>
+   
+    <div class="form-group">
+     <label class="form-check-label">How likely aare you to start working for us?</label><br>
+      <label>
+        <input
+          name="user-recommend"
+          value="Very likely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Very likely</label
+      ><br>
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      ><br>
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      ><br>
+    </div>
+    <label>What would you like to do?</label><br>
+    <div class="container">
+      <input type="checkbox" class="form-check-input" value='Front-End'><label>Front-end</label><br>
+     <input type="checkbox" class="form-check-input"value='Back-End'><label>Back-end</label><br>
+     <input type="checkbox"class="form-check-input" value='Fullstack'><label>Full-stack</label><br>
+    </div>
+    
+    
+    <label class="form-check-label">Any comments or suggestions?</label>
+    <textarea class="form-control  mb-4" placeholder="Enter your comment here..."></textarea>
+    <button class="btn btn-success btn-block " type="submit" id="submit">Submit</button>
+  </form>
+ </div>
+ 
+</body>
